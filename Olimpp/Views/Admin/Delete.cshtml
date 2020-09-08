@@ -1,0 +1,45 @@
+﻿@model Olimpp.Models.BookingTable
+
+    @{
+        ViewData["Title"] = "Delete";
+    }
+
+
+    <div>
+        <h4>Rezervari</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.seatno)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.seatno)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.UserId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.UserId)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DateToPresent)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DateToPresent)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Amount)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Amount)
+            </dd>
+            
+           
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
+    </div>

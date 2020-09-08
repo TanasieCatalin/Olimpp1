@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Content\**" />
+    <Content Remove="Content\**" />
+    <EmbeddedResource Remove="Content\**" />
+    <None Remove="Content\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\MovieLens 1M dataset _movies.csv" />
+    <Content Remove="wwwroot\lib\MovieLens 20M dataset _movies.csv" />
     <Content Remove="wwwroot\lib\ratings.csv" />
     <Content Remove="wwwroot\lib\ratings_test.csv" />
     <Content Remove="wwwroot\lib\ratings_train.csv" />

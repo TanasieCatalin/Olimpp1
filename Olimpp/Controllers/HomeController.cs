@@ -123,7 +123,7 @@ namespace Olimpp.Controllers
             }
             else
             {
-                TempData["seatnomsg"] = "Va rugam schimbati locul numarului";
+                TempData["seatnomsg"] = "Va rugam schimbati numarul locului";
 
             }
             return RedirectToAction("RezervaAcum");
@@ -219,5 +219,67 @@ namespace Olimpp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var film = await _contex.MovieDetalies.FindAsync(id);
+            if (film == null)
+            {
+                return NotFound();
+            }
+            //ViewData["CategorieProduseId"] = new SelectList(_context.Set<CategorieProduse>(), "CategorieProduseId", "CategorieProduseId", produsElectronic.CategorieProduseId);
+            //ViewData["CosDeCumparaturiId"] = new SelectList(_context.Set<CosDeCumparaturi>(), "CosDeCumparaturiId", "CosDeCumparaturiId", produsElectronic.CosDeCumparaturiId);
+            return View(film);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MovieName,MovieDescription,DateAndTime,MoviePicture,")] MovieDetalies movieDetalies)
+        {
+            if (id != movieDetalies.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _contex.Update(movieDetalies);
+                    await _contex.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!MovieDetaliesExists(movieDetalies.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            //ViewData["CategorieProduseId"] = new SelectList(_context.Set<CategorieProduse>(), "CategorieProduseId", "CategorieProduseId", produsElectronic.CategorieProduseId);
+            //ViewData["CosDeCumparaturiId"] = new SelectList(_context.Set<CosDeCumparaturi>(), "CosDeCumparaturiId", "CosDeCumparaturiId", produsElectronic.CosDeCumparaturiId);
+            return View(movieDetalies);
+        }
+        private bool MovieDetaliesExists(int id)
+        {
+            return _contex.MovieDetalies.Any(e => e.Id == id);
+        }
+
+
+
+
+
     }
 }

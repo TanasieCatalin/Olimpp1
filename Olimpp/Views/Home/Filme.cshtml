@@ -7,8 +7,6 @@
 <h1>Movie List</h1>
 
 
-    @*<a asp-controller="HomeController" asp-action="Predict"  class="btn btn-primary"> Predict</a>*@
-
 <form action="/Home/Filme">
 
     <span>
@@ -18,52 +16,13 @@
     <button class="btn btn-danger" type="submit">Cauta</button>
 
 </form>
-@*<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MovieName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MovieDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateAndTime)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MoviePicture)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MovieName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MovieDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateAndTime)
-            </td>
-            <td>
-                <img src="@item.MoviePicture" widh="100" height="100" asp-append-version="true" />
-            </td>
-            <td>
-                <a asp-action="RezervaAcum" asp-route-id="@item.Id"> Rezerva Bilet</a> |
 
-            </td>
-            <td>
-                <a asp-action="Predict" asp-route-id="@item.Id"> Predict</a> |
-
-            </td>*@
 
 <div class="row">
+
     @foreach (var item in Model)
     {
+        
         <div class="col-md-3">
             <div class="card">
                 <a asp-action="Details" asp-route-id="@item.Id">
@@ -84,4 +43,5 @@
         </div>
     }
 </div>
+
      

@@ -7,6 +7,7 @@ using FileUploadControl;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Olimpp.Data;
 using Olimpp.Models;
 using Olimpp.Models.ViewModels;
@@ -73,5 +74,23 @@ namespace Olimpp.Controllers
             var getUserTable = _contex.Users.ToList();
             return View(getUserTable);
         }
+
+        [HttpGet]
+        public IActionResult Delete(int Id)
+        {
+            var item = _contex.BookingTable.Where(a => a.Id == Id).SingleOrDefault();
+            return View(item);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteCartItem(int Id)
+        {
+            var item = _contex.BookingTable.Where(a => a.Id == Id).SingleOrDefault();
+            _contex.BookingTable.Remove(item);
+            _contex.SaveChanges();
+            return RedirectToAction("CheckBookSeat", "Admin");
+        }
+
     }
 }
