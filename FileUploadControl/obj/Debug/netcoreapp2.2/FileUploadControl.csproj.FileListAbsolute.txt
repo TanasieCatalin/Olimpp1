@@ -1,0 +1,9 @@
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\bin\Debug\netcoreapp2.2\FileUploadControl.deps.json
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\bin\Debug\netcoreapp2.2\FileUploadControl.dll
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.csproj.CoreCompileInputs.cache
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.AssemblyInfoInputs.cache
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.AssemblyInfo.cs
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.csprojAssemblyReference.cache
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\bin\Debug\netcoreapp2.2\FileUploadControl.pdb
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.dll
+C:\Users\GABI\source\repos\Olimpp\FileUploadControl\obj\Debug\netcoreapp2.2\FileUploadControl.pdb

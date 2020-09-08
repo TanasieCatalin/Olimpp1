@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Olimpp.Models.Cart>
+
+@{
+    ViewData["Title"] = "proceed";
+}
+
+<h1>Continua</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.seatno)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Amount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MovieId)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.seatno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MovieId)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        Total = @Model.Sum(i => i.Amount)
+
+    </div>
+    <input type="submit" value="Rezerva Bilet" asp-controller="CartT" asp-action="BookTicket" formmethod="post" />
+
+    <input type="submit" value="Predict" asp-controller="Home" asp-action="Predict" formmethod="post" />
+
+
+</form>

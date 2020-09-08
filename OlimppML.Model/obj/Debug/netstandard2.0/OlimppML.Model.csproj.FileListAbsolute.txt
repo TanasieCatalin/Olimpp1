@@ -1,0 +1,10 @@
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\bin\Debug\netstandard2.0\OlimppML.Model.deps.json
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\bin\Debug\netstandard2.0\OlimppML.Model.dll
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\bin\Debug\netstandard2.0\OlimppML.Model.pdb
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.csprojAssemblyReference.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.AssemblyInfoInputs.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.AssemblyInfo.cs
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.csproj.CoreCompileInputs.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.dll
+C:\Users\GABI\source\repos\Olimpp\OlimppML.Model\obj\Debug\netstandard2.0\OlimppML.Model.pdb

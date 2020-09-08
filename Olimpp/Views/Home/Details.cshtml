@@ -1,0 +1,42 @@
+﻿@model Olimpp.Models.MovieDetalies
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="row">
+    <h4>Movie</h4>
+    <hr />
+    <div class="col-sm-4">
+        <dl class="dropdown-menu-left">
+            <dt>
+                @Html.DisplayNameFor(model => model.MovieName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MovieName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.MovieDescription)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.MovieDescription)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DateAndTime)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DateAndTime)
+            </dd>
+           
+        </dl>
+    </div>
+    <div class="col-sm-4">
+        @*<img style="width:200px;height:150px;" src="@Url.Content("~/uploads/" + Model.MoviePicture)" alt="Image">*@
+        <img src="@Url.Content(Model.MoviePicture)" alt="Image" />
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>

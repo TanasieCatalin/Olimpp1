@@ -1,0 +1,16 @@
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\MLModel.zip
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.ConsoleApp.deps.json
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.ConsoleApp.runtimeconfig.json
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.ConsoleApp.runtimeconfig.dev.json
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.ConsoleApp.dll
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.ConsoleApp.pdb
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.Model.dll
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\bin\Debug\netcoreapp2.1\OlimppML.Model.pdb
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.AssemblyInfo.cs
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.csproj.CopyComplete
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.dll
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.pdb
+C:\Users\GABI\source\repos\Olimpp\OlimppML.ConsoleApp\obj\Debug\netcoreapp2.1\OlimppML.ConsoleApp.genruntimeconfig.cache

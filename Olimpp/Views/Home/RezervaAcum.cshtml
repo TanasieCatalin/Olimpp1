@@ -1,0 +1,52 @@
+﻿@model Olimpp.Models.ViewModels.BookNowViewModel
+
+@{
+    ViewData["Title"] = "RezervaAcum";
+}
+
+<h1>RezervaAcum</h1>
+
+<a asp-action="Index" asp-controller="CartT"> Verificati Cosul</a> |
+<a asp-action="Index" asp-controller="CartT"> Detaliile comenzii dvs.</a>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RezervaAcum">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MovieName" class="control-label"></label>
+                @Model.MovieName
+                <span asp-validation-for="MovieName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MovieDate" class="control-label"></label>
+               @Model.MovieDate
+                <span asp-validation-for="MovieDate" class="text-danger"></span>
+                <input type="submit" asp-action="VerificaScaun" asp-controller="Home" value="VerificaScaun" formmethod="post" />
+            </div>
+            <div class="form-group">
+                <label asp-for="SeatNo" class="control-label"></label>
+                <input asp-for="SeatNo" class="form-control" />
+                <span asp-validation-for="SeatNo" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="MovieId" class="control-label"></label>
+                <input asp-for="MovieId" class="form-control" />
+                <span asp-validation-for="MovieId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add to Cart" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @TempData["SUCESS"]
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
